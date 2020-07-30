@@ -3,7 +3,7 @@
       "id": "1",
       "title": "How do I setup a DNS name in my VM?",
       "description": "The DNS name provides a friendly name for your virtual machine. The DNS name label is a property of the Public IP associated with your VM. You can configure it using the Essentials panel in the VM or the Networking section",
-      "link": "https://docs.Microsoft.com/doclink"
+      "docLink": "https://docs.Microsoft.com/doclink",
       "uiSteps": [
           {
               "id": 1,
@@ -26,5 +26,60 @@
               "script": "AZURE SDK COMMAND"
           }
       ]
+  },
+  {
+    "id": 2,
+    "title": "How do I open RDP or SSH port?",
+    "description": "If you want to connect to your Virtual Machine via RDP or SSH, one way to do it is opening the respective ports in the Network Security Group"
+    "docLink": "https://docs.microsoft.com/fdjfkdjk",
+    "uiSteps": [
+        {
+            "id": 1,
+            "text": "Open the VM overview screen"
+        },
+        {
+            "id": 2,
+            "text": "If you want to connect to your Virtual Machine via RDP or SSH, one way to do it is opening the respective ports in the Network Security Group ",
+            "image": "/images/dnsname.gif"
+        },
+        {
+            "id": 3,
+            "text": "Click on 'Add inbound port rule' button",
+            "image": "/images/dnsname.gif"
+        },
+        {
+            "id": 4,
+            "text": "Add the rule to the NSG. Ensure that the priority of the rule is high enough so it is not overruled by other existing rules",
+            "substeps": [
+                {
+                    "id": 4.1,
+                    "text": "Click the 'Basic' option"
+                },
+                {
+                    "id": 4.2,
+                    "text": "Select RDP or SSH in the service drop down"
+                },
+                {
+                    "id": 4.3,
+                    "text": "Click Add"
+                }
+            ]
+            "image": "/images/ruleformexample.gif"
+       }
+    ],
+    "scriptSteps": [
+        {
+            "id": 1,
+            "description": "Open port 22 (SSH) in current VM",
+            "script": "az vm open-port -n {{VMNAME}} --port '22'",
+            "docLink": "https://docs.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest#az-vm-open-port"
+        },
+        {
+            "id": 2,
+            "description": "Open port 3389 (RDP) in current VM",
+            "script": "az vm open-port -n {{VMNAME}} --port '3389'",
+            "docLink": "https://docs.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest#az-vm-open-port"
+        }
+    ]
   }
 ]
