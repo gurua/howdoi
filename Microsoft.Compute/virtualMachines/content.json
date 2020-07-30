@@ -1,0 +1,30 @@
+[
+  {
+      id: "1",
+      title: "How do I setup a DNS name in my VM?",
+      description: "The DNS name provides a friendly name for your virtual machine. The DNS name label is a property of the Public IP associated with your VM. You can configure it using the Essentials panel in the VM or the Networking section",
+      link: “https://docs.Microsoft.com/doclink”
+      uiSteps: [
+          {
+              id: 1,
+              text: "Open the VM overview screen"
+          },
+          {
+             id: 2,
+             text: "Click on DNS name in Essentials to configure the DNS name",
+             image: "/images/dnsname.gif"
+         },
+         {
+              id: 3,
+              text: "Edit the DNS name label field and click save",
+              image: "/images/dnsname.gif"
+         }
+      ],
+      scriptSteps: [
+          {
+              id: 1,
+              script: "AZURE SDK COMMAND"
+          }
+      ]
+  }
+]
