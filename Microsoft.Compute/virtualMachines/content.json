@@ -30,7 +30,7 @@
   {
     "id": 2,
     "title": "How do I open RDP or SSH port?",
-    "description": "If you want to connect to your Virtual Machine via RDP or SSH, one way to do it is opening the respective ports in the Network Security Group"
+    "description": "If you want to connect to your Virtual Machine via RDP or SSH, one way to do it is opening the respective ports in the Network Security Group",
     "docLink": "https://docs.microsoft.com/fdjfkdjk",
     "uiSteps": [
         {
@@ -63,7 +63,7 @@
                     "id": 4.3,
                     "text": "Click Add"
                 }
-            ]
+            ],
             "image": "/images/ruleformexample.gif"
        }
     ],
