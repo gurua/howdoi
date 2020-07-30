@@ -2,5 +2,9 @@
   {
     "id": 1,
     "title": "How do I setup a DNS name in my VM?"
+  },
+  {
+    "id": 2,
+    "title": "How do I open RDP or SSH port in my VM?"
   }
 ]
