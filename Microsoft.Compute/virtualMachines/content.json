@@ -1,6 +1,6 @@
-[
-  {
-      "id": "1",
+{
+  "1": {
+      "id": 1,
       "title": "How do I setup a DNS name in my VM?",
       "description": "The DNS name provides a friendly name for your virtual machine. The DNS name label is a property of the Public IP associated with your VM. You can configure it using the Essentials panel in the VM or the Networking section",
       "docLink": "https://docs.Microsoft.com/doclink",
@@ -27,7 +27,7 @@
           }
       ]
   },
-  {
+  "2": {
     "id": 2,
     "title": "How do I open RDP or SSH port?",
     "description": "If you want to connect to your Virtual Machine via RDP or SSH, one way to do it is opening the respective ports in the Network Security Group",
@@ -82,4 +82,4 @@
         }
     ]
   }
-]
+}
